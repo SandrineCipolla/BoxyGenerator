@@ -15,7 +15,7 @@ export default function ShadowList() {
         <button
         onClick={()=>dispatch (addShadow())}
         className="py-1 px-3 text-sm rounded bg-purple-600 focus:outline-none
-        focus:ring-4 focus:ring-offset-2 text-white hover:bg-purple-700">
+        focus:ring-4 ring-purple-500 focus:ring-offset-2 text-white hover:bg-purple-700">
           Add a shadow
         </button>
       </div>
