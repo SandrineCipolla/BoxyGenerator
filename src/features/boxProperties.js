@@ -44,5 +44,5 @@ export const boxSlice = createSlice({
   },
 });
 
-export const { updateBoxValue} = boxSliceSlice.actions;
+export const { updateBoxValue} = boxSlice.actions;
 export default boxSlice.reducer;
