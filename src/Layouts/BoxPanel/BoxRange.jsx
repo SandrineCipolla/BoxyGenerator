@@ -39,16 +39,6 @@ export default function BoxRange({ inputData }) {
           onChange={handleInput}
           className="w-full h-[2px] bg-purple-200 rounded-lg 
             appearance-none cursor-pointer"
-        // className="
-        // appearance-none
-        // w-full
-        // h-[2px]
-        // m-20
-        // bg-sky-800
-        // border-4
-        // border-slate-600
-        // rounded-sm
-        // focus:outline-none"
           type="range"
         />
         <div
