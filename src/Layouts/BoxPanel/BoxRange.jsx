@@ -17,24 +17,38 @@ export default function BoxRange({ inputData }) {
     <div className="my-8 ">
       <div className="flex justify-between">
         <p>{inputData.name}</p>
-        <div className="flex items-baseline mb-2">
+        <div 
+        className="flex items-baseline mb-2"
+        >
           <input
             value={inputData.value}
             onChange={handleInput}
-            className="w-14 h-8 mr-2 border border-gray-200 text-center"
+            className="w-14 h-8 mr-2 border border-purple-400 text-center"
             type="number"
           />
           <p>px</p>
         </div>
       </div>
-      <div className="relative z-0 w-full flex items-center">
+      <div 
+      className="relative z-0 w-full flex items-center"
+      >
         <input
           min={inputData.minMax[0]}
           max={inputData.minMax[1]}
           value={inputData.value}
           onChange={handleInput}
-          className="w-full h-[2px] bg-gray-300 rounded-lg 
-                appearance-none cursor-pointer"
+          className="w-full h-[2px] bg-purple-200 rounded-lg 
+            appearance-none cursor-pointer"
+        // className="
+        // appearance-none
+        // w-full
+        // h-[2px]
+        // m-20
+        // bg-sky-800
+        // border-4
+        // border-slate-600
+        // rounded-sm
+        // focus:outline-none"
           type="range"
         />
         <div
