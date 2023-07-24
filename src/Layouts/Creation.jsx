@@ -20,7 +20,7 @@ export default function Creation() {
                     onClick={()=>setTabs(index)}
                     className="min-w-[125px] py-2 px-3 mr-4 font-bold border-T border-x
                     border-gray-300 bg-slate-50 hover:bg-slate-200 texte-slate-700
-                    rounded-t focus:outline-none focus:ring-2 ring-insert focus:ring-blue-300"
+                    rounded-t focus:outline-none focus:ring-2 ring-insert focus:ring-purple-300"
                     >
                         {tab.name}
                     </button>
