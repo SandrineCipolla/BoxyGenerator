@@ -34,7 +34,7 @@ export default function ModalResult({ closeModal }) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="max-w-[400px] rounded p-7 bg-gray-50 mb-[10vh]"
+        className="max-w-[400px] rounded p-7 bg-purple-50 mb-[10vh]"
       >
         <div className="flex items-end mb-5">
           <p className="font-semibold mr-5">Here is your code 🎉</p>
@@ -54,7 +54,7 @@ export default function ModalResult({ closeModal }) {
             Close
           </button>
         </div>
-        <p className="rounded bg-gray-100 p-5">
+        <p className="rounded bg-purple-100 p-5">
           <span className="font font-semibold">
             box-shadow : </span>
             <span>{getBoxShadowValue(shadowValues)}</span>

@@ -17,13 +17,13 @@ export default function BoxColorPicker({ inputData }) {
       <p>{inputData.name}</p>
       <div className="flex mt-2">
         <input
-          className="flex-grow border py-& px-2 focus:outline-1 outline-purple-300"
+          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full py-1 px-2"
           type="text"
           value={inputData.value}
           onChange={handleInput}
         />
         <input
-          className="cursor-pointer h-[40px]"
+          className="cursor-pointer h-[40px] ml-2"
           type="color"
           value={inputData.value}
           onChange={handleInput}

@@ -14,7 +14,8 @@ export default function ShadowCheckbox({ name, shadowID }) {
         type="checkbox"
         checked={checkboxShadow[name]}
         id={`checkbox-${name}-${shadowID}`}
-        className="h-4 w-4 border-gray-300 rounded mr-2"
+        className="h-4 w-4 rounded mr-2 bg-gray-50 border-purple-300 text-purple-500 focus:ring-0
+        checked:shadow-xl"
       />
       <label
         className="leading-4 mr-5"

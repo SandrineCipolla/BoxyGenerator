@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* input[type="checkbox"]{
+  accent-color: #8B5CF6;
+  border:1px solid #403065;
+  
+} */
+
 input[type="range"]::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
