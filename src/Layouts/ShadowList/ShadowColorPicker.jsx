@@ -1,5 +1,35 @@
-export default function ShadowColorPicker() {
+import { useDispatch } from "react-redux";
+import { updateShadowValue } from "../../features/shadows";
+
+export default function ShadowColorPicker({inputData,shadowID}) {
+  const dispatch = useDispatch();
+
+  function handleInput(e) {
+    dispatch(
+      updateShadowValue({
+        inputNumber: inputData.inputNumber,
+        value: e.target.value,
+        shadowID,
+      })
+    );
+  }
   return (
-    <div>ShadowColorPicker</div>
-  )
+    <div className="mt-3">
+      <p>{inputData.name}</p>
+      <div className="flex mt-2">
+        <input
+          className="flex-grow border py-& px-2 focus:outline-1 outline-purple-300"
+          type="text"
+          value={inputData.value}
+          onChange={handleInput}
+        />
+        <input
+          className="cursor-pointer h-[40px]"
+          type="color"
+          value={inputData.value}
+          onChange={handleInput}
+        />
+      </div>
+    </div>
+  );
 }

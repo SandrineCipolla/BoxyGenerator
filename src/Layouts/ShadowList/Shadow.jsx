@@ -18,7 +18,7 @@ export default function Shadow({ panelNumber, shadow }) {
         <ShadowRange
           key={index}
           inputData={shadow.inputs[index]}
-          shadowId={shadow.id}
+          shadowID={shadow.id}
         />
       );
     } else if (input.type === "color") {
@@ -26,7 +26,7 @@ export default function Shadow({ panelNumber, shadow }) {
         <ShadowColorPicker
           key={index}
           inputData={shadow.inputs[index]}
-          shadowId={shadow.id}
+          shadowID={shadow.id}
         />
       );
     }
@@ -50,7 +50,7 @@ export default function Shadow({ panelNumber, shadow }) {
       </button>
       {toggleShadow && (
         <>
-          <div className="flex items-end px-6 pt-4">
+          <div className="flex items-end px-6 py-4">
             {/* < Checkbox/>
                     < Checkbox/> */}
             <button

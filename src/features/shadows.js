@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 import { nanoid } from "nanoid";
 
 const initialState = [
@@ -93,8 +93,27 @@ export const shadowSlice = createSlice({
         ],
       });
     },
-    updateShadowValue: (state, action) => {},
-    updateCheckbox: (state, action) => {},
+    updateShadowValue: (state, action) => {
+      console.log("state", state);
+      const currentShadow = state.find(
+        (shadow) => shadow.id === action.payload.shadowID
+      );
+
+      const currentInput = currentShadow.inputs.find(
+        (input) => input.inputNumber === action.payload.inputNumber
+      );
+      if (currentInput) {
+        currentInput.value = action.payload.value;
+      }
+    },
+
+    updateCheckbox: (state, action) => {
+      const currentShadow = state.find(
+        (shadow) => shadow.id === action.payload.shadowID
+      );
+
+      currentShadow[action.payload.name] = !currentShadow[action.payload.name];
+    },
   },
 });
 
