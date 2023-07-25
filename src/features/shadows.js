@@ -102,9 +102,8 @@ export const shadowSlice = createSlice({
       const currentInput = currentShadow.inputs.find(
         (input) => input.inputNumber === action.payload.inputNumber
       );
-      if (currentInput) {
-        currentInput.value = action.payload.value;
-      }
+
+      currentInput.value = action.payload.value;
     },
 
     updateCheckbox: (state, action) => {
