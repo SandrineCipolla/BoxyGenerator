@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Creation from "./Layouts/Creation";
+import Visualization from "./Layouts/Visualization/Visualization";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       bg-gray-100 px-10 md:flex-nowrap">
 
         <Creation/>
-        {/* <Visualization/> */}
+        <Visualization/>
       </main>
       <Footer/>
     </div>
