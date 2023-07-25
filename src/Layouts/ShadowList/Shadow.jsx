@@ -3,9 +3,13 @@ import chevron from "../../assets/chevron.svg";
 import ShadowRange from "./ShadowRange";
 import ShadowColorPicker from "./ShadowColorPicker";
 import ShadowCheckbox from "./ShadowCheckbox";
+import { removeShadow } from "../../features/shadows";
+import { useDispatch } from "react-redux";
 
 export default function Shadow({ panelNumber, shadow }) {
+  const dispatch =useDispatch()
   const [toggleShadow, setToggleShadow] = useState(false);
+  console.log(shadow,"shadow");
 
   useEffect(() => {
     if (panelNumber === 1) {
@@ -55,6 +59,7 @@ export default function Shadow({ panelNumber, shadow }) {
             <ShadowCheckbox name={"active"} shadowID={shadow.id}/>
             <ShadowCheckbox name={"inset"} shadowID={shadow.id}/>
             <button
+              onClick={()=> dispatch(removeShadow(shadow.id))}
               className="ml-auto text-sm bg-pink-600 text-white
                      hover:bg-pink-700 py-1 px-3 rounded"
             >
