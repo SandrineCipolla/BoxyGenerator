@@ -28,7 +28,7 @@ export default function Creation() {
             </div >
 
             <div 
-            // className="flex-shrink-0 h-full max-h-[700] overflow-auto"
+            className="flex-shrink-0 h-full overflow-auto max-h-[700]"
             >
                 {tabsList[tabs].component}
             </div>

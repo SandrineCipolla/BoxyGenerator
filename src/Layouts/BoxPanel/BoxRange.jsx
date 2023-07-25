@@ -14,7 +14,7 @@ export default function BoxRange({ inputData }) {
   }
 
   return (
-    <div className="my-8 ">
+    <div className="my-6">
       <div className="flex justify-between">
         <p>{inputData.name}</p>
         <div 
